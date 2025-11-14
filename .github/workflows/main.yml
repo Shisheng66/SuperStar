@@ -2,7 +2,7 @@ name: 刷课
  
 on: 
   push:
-    branches: [ main ]
+    branches: [ clode ]
   #是否开始每天8点定时刷课，若要开启请把下面两行注释去掉
   schedule:
     - cron: "0 6 * * *" 
@@ -25,4 +25,4 @@ jobs:
           
       
       - name: Run main.py
-        run: python main.py -u 15194421188 -p Lfc730101 -l GX200508 #课程id，默认为心理课的
+        run: python main.py -u 15194421188 -p Lfc730101 -l  #课程id，默认为心理课的
